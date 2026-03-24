@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bully - Motion Graphic Showcase</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand font-display fw-black fs-3 tracking-tighter text-white" href="#">BULLY.</a>
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item"><a class="nav-link active" href="#hero">TOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#video">VIDEO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#characters">CHARACTERS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section id="hero">
+        <div class="slide active" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074407612059819/01.png?ex=69c42e24&is=69c2dca4&hm=052b742883caf5a0440f938159cd0ece46511b948b4d300a0addf109ea7dd1b9&=&format=webp&quality=lossless&width=1421&height=800')"></div>
+        <div class="slide" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074407112806430/00.png?ex=69c42e24&is=69c2dca4&hm=f2bf9bdb7f6959e589b67d607083fae775cd6176293f62c12d360035051cdfb2&=&format=webp&quality=lossless&width=1421&height=800')"></div>
+        <div class="slide" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074406647107674/02.png?ex=69c42e24&is=69c2dca4&hm=a498c33f7a121bfefebc4f3585c74cfa7a7d03716062a66e195e02e640e4e4f9&=&format=webp&quality=lossless&width=1421&height=800')"></div>
+
+        <div class="slider-dots">
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+            <button class="dot" onclick="goToSlide(2)"></button>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <div class="container">
+            <div class="video-container">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=0&loop=1&playlist=dQw4w9WgXcQ"
+                        title="The Bully Showcase Video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h2 class="fw-bold tracking-tight">VIDEO</h2>
+                <p class="text-white-50 text-uppercase small tracking-widest">ในรั้วโรงเรียนที่เคยเป็นเหมือนบ้านหลังที่สอง... สำหรับนักเรียนหลายคน สังคมแห่งนี้กลับเต็มไปด้วยเงาของการกลั่นแกล้ง ปัญหาที่ฝังรากลึกและพร้อมที่จะทำลายอนาคตของผู้ถูกกระทำอย่างช้าๆ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Grid -->
+    <section id="characters">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">CHARACTERS</h2>
+                <div style="width: 80px; height: 3px; background: var(--accent-color); margin: 0 auto;"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="char-card">
+                        <div class="card-header">
+                            <div>
+                                <div class="card-type">TARGET</div>
+                                <h3 class="card-name">โปเต้</h3>
+                            </div>
+                            <div class="card-hp">17002</div>
+                        </div>
+                        <div class="card-img-frame">
+                            <img src="tae.png" alt="เต้">
+                        </div>
+                        <div class="card-info-box">
+                            <div class="info-label">Background</div>
+                            <p class="card-bio">โปเต้ - เป็นเด็กที่ไม่กล้าพูดมาจากครอบครัวจน
+                                โดนขู่โดนรังแกอยู่บ่อยครั้ง แม้คนรอบตัวก็ยังไม่เหลวแล</p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-label">ATK</div>
+                                    <div class="stat-value">85</div>
+                                </div>
+                                <div class="stat-item border-start border-end border-secondary">
+                                    <div class="stat-label">DEF</div>
+                                    <div class="stat-value">90</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">SPD</div>
+                                    <div class="stat-value">40</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>#001 / BULLY-WIKI</span>
+                            <span>•••</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="char-card">
+                        <div class="card-header">
+                            <div>
+                                <div class="card-type">THE BULLY</div>
+                                <h3 class="card-name">ใหญ่</h3>
+                            </div>
+                            <div class="card-hp">17101</div>
+                        </div>
+                        <div class="card-img-frame">
+                            <img src="yai.png" alt="ใหญ่">
+                        </div>
+                        <div class="card-info-box">
+                            <div class="info-label">Background</div>
+                            <p class="card-bio">ใหญ่ - เป็นเด็กที่ตัวโต 
+ชอบเล่นกีฬา การได้เห็นโปเต้อมทุกข์และอับอายคือความสนุกสนานของเขา</p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-label">ATK</div>
+                                    <div class="stat-value">45</div>
+                                </div>
+                                <div class="stat-item border-start border-end border-secondary">
+                                    <div class="stat-label">DEF</div>
+                                    <div class="stat-value">60</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">SPD</div>
+                                    <div class="stat-value">95</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>#002 / BULLY-WIKI</span>
+                            <span>•••</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="char-card">
+                        <div class="card-header">
+                            <div>
+                                <div class="card-type">THE BULLY</div>
+                                <h3 class="card-name">เป็ด</h3>
+                            </div>
+                            <div class="card-hp">17031</div>
+                        </div>
+                        <div class="card-img-frame">
+                            <img src="ped.png" alt="เป็ด">
+                        </div>
+                        <div class="card-info-box">
+                            <div class="info-label">Background</div>
+                            <p class="card-bio">เป็ด - เป็นเด็กที่มาจากครอบครัวคนรวย
+เป็นเพื่อนสมัยเด็กของ ใหญ่ชอบแก้ปัญหาด้วยเงิน
+มีอคติกับเด็กจน อยู่บ่อยครั้ง</p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-label">ATK</div>
+                                    <div class="stat-value">75</div>
+                                </div>
+                                <div class="stat-item border-start border-end border-secondary">
+                                    <div class="stat-label">DEF</div>
+                                    <div class="stat-value">50</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">SPD</div>
+                                    <div class="stat-value">85</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>#003 / BULLY-WIKI</span>
+                            <span>•••</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 THE BULLY MOTION GRAPHIC PROJECT. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const progressFill = document.getElementById('progressFill');
+        const slideInterval = 15000;
+        let slideTimer;
+        let progressTimer;
+        let startTime;
+
+        function updateSlider() {
+            slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+            resetProgress();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+            clearInterval(slideTimer);
+            startTimers();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        }
+
+        function resetProgress() {
+            startTime = Date.now();
+            if (progressTimer) cancelAnimationFrame(progressTimer);
+            animateProgress();
+        }
+
+        function animateProgress() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min((elapsed / slideInterval) * 100, 100);
+            progressFill.style.width = progress + '%';
+
+            if (progress < 100) {
+                progressTimer = requestAnimationFrame(animateProgress);
+            }
+        }
+
+        function startTimers() {
+            slideTimer = setInterval(nextSlide, slideInterval);
+        }
+
+        // Navigation Highlighting
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-50% 0px -50% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        // Initialize
+        window.onload = () => {
+            updateSlider();
+            startTimers();
+        };
+    </script>
+</body>
+
+</html>
