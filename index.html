@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,9 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Navigation -->
@@ -30,10 +26,25 @@
 
     <!-- Hero Slider -->
     <section id="hero">
-        <div class="slide active" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074407612059819/01.png?ex=69c42e24&is=69c2dca4&hm=052b742883caf5a0440f938159cd0ece46511b948b4d300a0addf109ea7dd1b9&=&format=webp&quality=lossless&width=1421&height=800')"></div>
-        <div class="slide" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074407112806430/00.png?ex=69c42e24&is=69c2dca4&hm=f2bf9bdb7f6959e589b67d607083fae775cd6176293f62c12d360035051cdfb2&=&format=webp&quality=lossless&width=1421&height=800')"></div>
-        <div class="slide" style="background-image: url('https://media.discordapp.net/attachments/1309657030918930443/1486074406647107674/02.png?ex=69c42e24&is=69c2dca4&hm=a498c33f7a121bfefebc4f3585c74cfa7a7d03716062a66e195e02e640e4e4f9&=&format=webp&quality=lossless&width=1421&height=800')"></div>
-
+        <div class="slide active" style="background-image: url('0.png')">
+            <div class="slide-content">
+                <h1 class="display-1 fw-black tracking-tighter mb-4">BULLYING IS BAD</h1>
+                <p class="lead text-white-50 mb-5 max-w-md">Power is not given, it is taken. Witness the rise of the ultimate strength.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('1.png')">
+            <div class="slide-content">
+                <h1 class="display-1 fw-black tracking-tighter mb-4">BULLYING IS SAD</h1>
+                <p class="lead text-white-50 mb-5 max-w-md">Control the board, control the world. Intelligence is the sharpest weapon.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('2.png')">
+            <div class="slide-content">
+                <h1 class="display-1 fw-black tracking-tighter mb-4">BULLYING IS MAD</h1>
+                <p class="lead text-white-50 mb-5 max-w-md">Chaos is a ladder. Embrace the unpredictable and break the cycle.</p>
+            </div>
+        </div>
+        
         <div class="slider-dots">
             <button class="dot active" onclick="goToSlide(0)"></button>
             <button class="dot" onclick="goToSlide(1)"></button>
@@ -50,9 +61,7 @@
         <div class="container">
             <div class="video-container">
                 <div class="ratio ratio-16x9">
-                    <iframe
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=0&loop=1&playlist=dQw4w9WgXcQ"
-                        title="The Bully Showcase Video" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=0&loop=1&playlist=dQw4w9WgXcQ" title="The Bully Showcase Video" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="text-center mt-5">
@@ -73,7 +82,7 @@
             <div class="row g-4">
                 <!-- Card 1 -->
                 <div class="col-md-4">
-                    <div class="char-card">
+                    <div class="char-card" onclick="openLightbox(0)">
                         <div class="card-header">
                             <div>
                                 <div class="card-type">TARGET</div>
@@ -86,8 +95,7 @@
                         </div>
                         <div class="card-info-box">
                             <div class="info-label">Background</div>
-                            <p class="card-bio">โปเต้ - เป็นเด็กที่ไม่กล้าพูดมาจากครอบครัวจน
-                                โดนขู่โดนรังแกอยู่บ่อยครั้ง แม้คนรอบตัวก็ยังไม่เหลวแล</p>
+                            <p class="card-bio">โปเต้ - เป็นเด็กที่ไม่กล้าพูดมาจากครอบครัวจน โดนขู่โดนรังแกอยู่บ่อยครั้ง แม้คนรอบตัวก็ยังไม่เหลวแล</p>
                             <div class="stats-grid">
                                 <div class="stat-item">
                                     <div class="stat-label">ATK</div>
@@ -112,7 +120,7 @@
 
                 <!-- Card 2 -->
                 <div class="col-md-4">
-                    <div class="char-card">
+                    <div class="char-card" onclick="openLightbox(1)">
                         <div class="card-header">
                             <div>
                                 <div class="card-type">THE BULLY</div>
@@ -125,8 +133,7 @@
                         </div>
                         <div class="card-info-box">
                             <div class="info-label">Background</div>
-                            <p class="card-bio">ใหญ่ - เป็นเด็กที่ตัวโต 
-ชอบเล่นกีฬา การได้เห็นโปเต้อมทุกข์และอับอายคือความสนุกสนานของเขา</p>
+                            <p class="card-bio">ใหญ่ - เป็นเด็กที่ตัวโต ชอบเล่นกีฬา การได้เห็นโปเต้อมทุกข์และอับอายคือความสนุกสนานของเขา</p>
                             <div class="stats-grid">
                                 <div class="stat-item">
                                     <div class="stat-label">ATK</div>
@@ -151,7 +158,7 @@
 
                 <!-- Card 3 -->
                 <div class="col-md-4">
-                    <div class="char-card">
+                    <div class="char-card" onclick="openLightbox(2)">
                         <div class="card-header">
                             <div>
                                 <div class="card-type">THE BULLY</div>
@@ -164,9 +171,7 @@
                         </div>
                         <div class="card-info-box">
                             <div class="info-label">Background</div>
-                            <p class="card-bio">เป็ด - เป็นเด็กที่มาจากครอบครัวคนรวย
-เป็นเพื่อนสมัยเด็กของ ใหญ่ชอบแก้ปัญหาด้วยเงิน
-มีอคติกับเด็กจน อยู่บ่อยครั้ง</p>
+                            <p class="card-bio">เป็ด - เป็นเด็กที่มาจากครอบครัวคนรวย เป็นเพื่อนสมัยเด็กของ ใหญ่ชอบแก้ปัญหาด้วยเงิน มีอคติกับเด็กจน อยู่บ่อยครั้ง</p>
                             <div class="stats-grid">
                                 <div class="stat-item">
                                     <div class="stat-label">ATK</div>
@@ -192,6 +197,23 @@
         </div>
     </section>
 
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+            <div class="lightbox-body">
+                <div class="lightbox-info-col">
+                    <!-- Info Column (30%) -->
+                    <div id="lb-info"></div>
+                </div>
+                <div class="lightbox-main-col">
+                    <!-- Main Column (70%) -->
+                    <div id="lb-main"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             &copy; 2026 THE BULLY MOTION GRAPHIC PROJECT. ALL RIGHTS RESERVED.
@@ -200,8 +222,115 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    
     <script>
+        const characterData = [
+            {
+                name: "โปเต้",
+                type: "TARGET",
+                hp: "17002",
+                img: "tae.png",
+                sheet: "tae_sheet.png",
+                bio: "โปเต้ - เป็นเด็กที่ไม่กล้าพูดมาจากครอบครัวจน โดนขู่โดนรังแกอยู่บ่อยครั้ง แม้คนรอบตัวก็ยังไม่เหลวแล ในรั้วโรงเรียนที่เคยเป็นเหมือนบ้านหลังที่สอง... สำหรับนักเรียนหลายคน สังคมแห่งนี้กลับเต็มไปด้วยเงาของการกลั่นแกล้ง ปัญหาที่ฝังรากลึกและพร้อมที่จะทำลายอนาคตของผู้ถูกกระทำอย่างช้าๆ",
+                stats: { atk: 85, def: 90, spd: 40 },
+                id: "#001"
+            },
+            {
+                name: "ใหญ่",
+                type: "THE BULLY",
+                hp: "17101",
+                img: "yai.png",
+                sheet: "yai_sheet.png",
+                bio: "ใหญ่ - เป็นเด็กที่ตัวโต ชอบเล่นกีฬา การได้เห็นโปเต้อมทุกข์และอับอายคือความสนุกสนานของเขา เขาเป็นผู้นำกลุ่มที่มักจะใช้กำลังในการตัดสินปัญหา และมองว่าการรังแกผู้อื่นคือการแสดงออกถึงความแข็งแกร่ง",
+                stats: { atk: 45, def: 60, spd: 95 },
+                id: "#002"
+            },
+            {
+                name: "เป็ด",
+                type: "THE BULLY",
+                hp: "17031",
+                img: "ped.png",
+                sheet: "ped_sheet.png",
+                bio: "เป็ด - เป็นเด็กที่มาจากครอบครัวคนรวย เป็นเพื่อนสมัยเด็กของ ใหญ่ชอบแก้ปัญหาด้วยเงิน มีอคติกับเด็กจน อยู่บ่อยครั้ง เขามักจะใช้เส้นสายและฐานะทางสังคมในการกดขี่ผู้อื่น และเป็นคนวางแผนเบื้องหลังการกลั่นแกล้งหลายๆ ครั้ง",
+                stats: { atk: 75, def: 50, spd: 85 },
+                id: "#003"
+            }
+        ];
+
+        function openLightbox(index) {
+            const char = characterData[index];
+            const lb = document.getElementById('lightbox');
+            const infoCol = document.getElementById('lb-info');
+            const mainCol = document.getElementById('lb-main');
+
+            infoCol.innerHTML = `
+                <div class="lb-sidebar">
+                    <div class="card-type mb-1">${char.type}</div>
+                    <h2 class="fw-black mb-3">${char.name}</h2>
+                    <div class="stats-list">
+                        <div class="stat-row">
+                            <span>ATK</span>
+                            <div class="stat-bar"><div style="width: ${char.stats.atk}%"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>DEF</span>
+                            <div class="stat-bar"><div style="width: ${char.stats.def}%"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span>SPD</span>
+                            <div class="stat-bar"><div style="width: ${char.stats.spd}%"></div></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-white-50 small" style="font-size: 0.6rem;">
+                        <p class="mb-1">SERIAL: ${char.id}</p>
+                        <p class="mb-0">STATUS: ACTIVE</p>
+                    </div>
+                </div>
+            `;
+
+            mainCol.innerHTML = `
+                <div class="h-100 d-flex flex-column">
+                    <div class="lightbox-tabs">
+                        <button class="tab-btn active" onclick="switchTab(event, 'design')">Character Design</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'archive')">Background Archive</button>
+                    </div>
+                    
+                    <div id="design" class="tab-content active p-4">
+                        <div class="char-sheet-container">
+                            <img src="${char.sheet}" class="char-sheet-img" alt="${char.name} Character Sheet" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                    
+                    <div id="archive" class="tab-content p-4">
+                        <div class="archive-box">
+                            <div class="archive-label">Background Archive</div>
+                            <p class="text-white-50 mb-0" style="line-height: 1.6; font-size: 0.85rem;">${char.bio}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function switchTab(e, tabId) {
+            // Update buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+
+            // Update content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        function closeLightbox(e) {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
         // Slider Logic
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
@@ -240,7 +369,7 @@
             const elapsed = Date.now() - startTime;
             const progress = Math.min((elapsed / slideInterval) * 100, 100);
             progressFill.style.width = progress + '%';
-
+            
             if (progress < 100) {
                 progressTimer = requestAnimationFrame(animateProgress);
             }
@@ -280,5 +409,5 @@
         };
     </script>
 </body>
-
 </html>
+
