@@ -29,21 +29,21 @@
         <div class="slide active" style="background-image: url('1.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS BAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ความรุนแรงไม่ใช่ทางออก แต่มันคือจุดเริ่มต้นของบาดแผลที่ไม่มีวันจางหาย การรังแกคือการทำลายตัวตนของเพื่อนมนุษย์</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ความรุนแรงไม่ใช่ทางออก แต่มันคือจุดเริ่มต้นของบาดแผลที่ไม่มีวันจางหาย การรังแกคือการทำลายตัวตนของเพื่อนมนุษย์</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
         <div class="slide" style="background-image: url('0.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS SAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ภายใต้หน้ากากของผู้คุมเกม คือความโดดเดี่ยวที่ซ่อนอยู่ การทำร้ายผู้อื่นอาจเป็นเพียงเสียงกรีดร้องเพื่อขอความช่วยเหลือที่ผิดวิธี</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ภายใต้หน้ากากของผู้คุมเกม คือความโดดเดี่ยวที่ซ่อนอยู่ การทำร้ายผู้อื่นอาจเป็นเพียงเสียงกรีดร้องเพื่อขอความช่วยเหลือที่ผิดวิธี</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
         <div class="slide" style="background-image: url('2.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS MAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ความโกรธแค้นที่ถูกส่งต่อเป็นทอดๆ วงจรแห่งความเจ็บปวดที่ไม่มีที่สิ้นสุด ใครจะเป็นคนหยุดวังวนนี้?</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ความโกรธแค้นที่ถูกส่งต่อเป็นทอดๆ วงจรแห่งความเจ็บปวดที่ไม่มีที่สิ้นสุด ใครจะเป็นคนหยุดวังวนนี้?</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
@@ -273,18 +273,23 @@
                         <div class="card-type">${char.type}</div>
                         <div class="card-hp" style="font-size: 0.8rem;">${char.hp}</div>
                     </div>
-                    <h2 class="fw-black mb-4">${char.name}</h2>
+                    <h2 class="fw-black mb-3">${char.name}</h2>
+                    
+                    <div class="lb-profile-frame mb-4">
+                        <img src="${char.img}" alt="${char.name}" class="lb-profile-pic" referrerPolicy="no-referrer">
+                    </div>
+
                     <div class="stats-list">
                         <div class="stat-row">
-                            <span>ATK</span>
+                            <span>ATK [ค่าโจมตี]</span>
                             <div class="stat-bar"><div style="width: ${char.stats.atk}%"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>DEF</span>
+                            <span>DEF [ค่าป้องกัน]</span>
                             <div class="stat-bar"><div style="width: ${char.stats.def}%"></div></div>
                         </div>
                         <div class="stat-row">
-                            <span>SPD</span>
+                            <span>SPD [ความเร็ว]</span>
                             <div class="stat-bar"><div style="width: ${char.stats.spd}%"></div></div>
                         </div>
                     </div>
