@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
     overflow-x: hidden;
 }
 
-h1, h2, h3, .font-display {
+h1, h2, h3, .font-display, .btn-accent {
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -185,6 +185,8 @@ html {
     transition: all 0.5s ease;
     position: relative;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .char-card:hover {
@@ -247,6 +249,9 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 0.5rem;
     padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-label {
@@ -280,7 +285,7 @@ html {
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid #333;
     padding-top: 0.75rem;
-    margin-top: 0.75rem;
+    margin-top: auto;
 }
 
 .stat-item {
@@ -516,8 +521,8 @@ html {
 }
 
 .archive-box {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
     overflow-y: auto;
     height: 100%;
