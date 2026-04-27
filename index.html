@@ -29,21 +29,21 @@
         <div class="slide active" style="background-image: url('1.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS BAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ความรุนแรงไม่ใช่ทางออก แต่มันคือจุดเริ่มต้นของบาดแผลที่ไม่มีวันจางหาย การรังแกคือการทำลายตัวตนของเพื่อนมนุษย์</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ความรุนแรงไม่ใช่ทางออก แต่มันคือจุดเริ่มต้นของบาดแผลที่ไม่มีวันจางหาย การรังแกคือการทำลายตัวตนของเพื่อนมนุษย์</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
         <div class="slide" style="background-image: url('0.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS SAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ภายใต้หน้ากากของผู้คุมเกม คือความโดดเดี่ยวที่ซ่อนอยู่ การทำร้ายผู้อื่นอาจเป็นเพียงเสียงกรีดร้องเพื่อขอความช่วยเหลือที่ผิดวิธี</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ภายใต้หน้ากากของผู้คุมเกม คือความโดดเดี่ยวที่ซ่อนอยู่ การทำร้ายผู้อื่นอาจเป็นเพียงเสียงกรีดร้องเพื่อขอความช่วยเหลือที่ผิดวิธี</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
         <div class="slide" style="background-image: url('2.png')">
             <div class="slide-content">
                 <h1 class="display-1 fw-black tracking-tighter mb-4">BULLY IS MAD</h1>
-                <p class="lead text-white mb-5 max-w-md">ความโกรธแค้นที่ถูกส่งต่อเป็นทอดๆ วงจรแห่งความเจ็บปวดที่ไม่มีที่สิ้นสุด ใครจะเป็นคนหยุดวังวนนี้?</p>
+                <p class="lead text-white-50 mb-5 max-w-md">ความโกรธแค้นที่ถูกส่งต่อเป็นทอดๆ วงจรแห่งความเจ็บปวดที่ไม่มีที่สิ้นสุด ใครจะเป็นคนหยุดวังวนนี้?</p>
                 <a href="#video" class="btn btn-accent px-5 py-3 fw-bold">WATCH VIDEO</a>
             </div>
         </div>
@@ -64,12 +64,33 @@
         <div class="container">
             <div class="video-container">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/9JMfcp115KQ?autoplay=0&mute=1&controls=0&loop=1&playlist=9JMfcp115KQ" title="The Bully Showcase Video" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ld7nBjDOzBk?autoplay=0&mute=1&controls=0&loop=1&playlist=ld7nBjDOzBk" title="The Bully Showcase Video" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="text-center mt-5">
                 <h2 class="fw-bold tracking-tight">VIDEO</h2>
                 <p class="text-white-50 text-uppercase small tracking-widest">ในรั้วโรงเรียนที่เคยเป็นเหมือนบ้านหลังที่สอง... สำหรับนักเรียนหลายคน สังคมแห่งนี้กลับเต็มไปด้วยเงาของการกลั่นแกล้ง ปัญหาที่ฝังรากลึกและพร้อมที่จะทำลายอนาคตของผู้ถูกกระทำอย่างช้าๆ</p>
+            </div>
+            
+            <!-- Gallery Section -->
+            <div class="gallery-grid mt-5">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="gallery-item" onclick="openGalleryLightbox('Gallery_Img2.png')">
+                            <img src="Gallery_Img2.png" alt="Gallery Image 2" class="img-fluid" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item" onclick="openGalleryLightbox('Gallery_Img3.png')">
+                            <img src="Gallery_Img3.png" alt="Gallery Image 3" class="img-fluid" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item" onclick="openGalleryLightbox('Gallery_Img4.png')">
+                            <img src="Gallery_Img4.png" alt="Gallery Image 4" class="img-fluid" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -218,6 +239,14 @@
         </div>
     </div>
 
+    <!-- Gallery Lightbox -->
+    <div id="gallery-lightbox" class="gallery-lightbox-overlay" onclick="closeGalleryLightbox(event)">
+        <div class="gallery-lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeGalleryLightbox(event)">&times;</button>
+            <img id="gallery-img" src="" alt="Full View">
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             &copy; 2026 THE BULLY MOTION GRAPHIC PROJECT. ALL RIGHTS RESERVED.
@@ -233,7 +262,7 @@
                 name: "โปเต้",
                 type: "TARGET",
                 hp: "17002",
-                img: "tae.png",
+                img: "TAE_pic.png",
                 sheet: "tae_sheet.png",
                 bio: "โปเต้ - เด็กหนุ่มผู้เงียบขรึมที่เติบโตมาในครอบครัวที่ยากลำบาก เขาต้องเผชิญกับการถูกข่มขู่และรังแกในโรงเรียนเกือบทุกวัน ความเงียบของเขาไม่ใช่การยอมรับ แต่เป็นความกลัวที่ฝังลึกจนไม่กล้าแม้แต่จะเอ่ยปากขอความช่วยเหลือ แม้แต่คนรอบข้างที่ควรจะเป็นที่พึ่งก็กลับเพิกเฉยต่อความเจ็บปวดของเขา ทำให้เขารู้สึกเหมือนถูกทิ้งให้อยู่ในโลกที่มืดมิดเพียงลำพัง ท่ามกลางเสียงหัวเราะเยาะที่คอยตามหลอกหลอนเขาในทุกย่างก้าว",
                 stats: { atk: 85, def: 90, spd: 40 },
@@ -243,7 +272,7 @@
                 name: "ใหญ่",
                 type: "THE BULLY",
                 hp: "17101",
-                img: "yai.png",
+                img: "YAI_pic.png",
                 sheet: "yai_sheet.png",
                 bio: "ใหญ่ - เด็กหนุ่มร่างกำยำผู้รักการเล่นกีฬาและมีพละกำลังมหาศาล แต่เขากลับใช้ความแข็งแกร่งนั้นในทางที่ผิด การได้เห็นโปเต้ตกอยู่ในความทุกข์ระทมและอับอายคือความบันเทิงหลักของเขา เขาเชื่อว่าโลกนี้คือป่าที่ผู้แข็งแกร่งเท่านั้นที่จะอยู่รอด และการกดขี่ผู้อื่นคือการยืนยันอำนาจของตนเองที่เขาได้รับมาจากค่านิยมที่ผิดๆ ในครอบครัวที่สอนให้เขาต้องเป็นที่หนึ่งเสมอไม่ว่าจะด้วยวิธีใดก็ตาม",
                 stats: { atk: 45, def: 60, spd: 95 },
@@ -253,7 +282,7 @@
                 name: "เป็ด",
                 type: "THE BULLY",
                 hp: "17031",
-                img: "ped.png",
+                img: "PED_pic.png",
                 sheet: "ped_sheet.png",
                 bio: "เป็ด - ทายาทจากครอบครัวมหาเศรษฐีผู้มีอิทธิพล เขาเป็นเพื่อนสนิทของใหญ่มาตั้งแต่เด็กและเป็นมันสมองเบื้องหลังการกลั่นแกล้งทุกครั้ง เป็ดมีอคติอย่างรุนแรงต่อผู้ที่มีฐานะด้อยกว่าและมักจะใช้เงินและเส้นสายในการแก้ปัญหาหรือปิดปากผู้ที่ขัดขวางเขา สำหรับเขา โลกใบนี้ซื้อได้ด้วยเงิน และความรู้สึกของคนจนก็เป็นเพียงแค่สิ่งไร้ค่าที่เขาสสามารถเหยียบย่ำได้ตามใจชอบ ความเย่อหยิ่งของเขาคือเกราะกำบังความอ่อนแอภายใน",
                 stats: { atk: 75, def: 50, spd: 85 },
@@ -358,6 +387,19 @@
 
         function closeLightbox(e) {
             document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function openGalleryLightbox(imgSrc) {
+            const lb = document.getElementById('gallery-lightbox');
+            const img = document.getElementById('gallery-img');
+            img.src = imgSrc;
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGalleryLightbox(e) {
+            document.getElementById('gallery-lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
 
